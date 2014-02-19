@@ -1,11 +1,3 @@
-/*
- * !(c) 2014, Carpov Systems Inc. | carpovsystems.com  
- */
-
-// --------------------
-// Scrolling
-// --------------------
-
 function Scroll(time, step) {
 
 	var S = this;	
