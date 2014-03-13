@@ -13,14 +13,14 @@ function Scroll(time, step) {
 
 	S.run = function() {		
 		S.now += S.step;
-		document.documentElement.scrollTop = S.ease(S.now, S.top, S.way, S.time);		
+		document.body.scrollTop = S.ease(S.now, S.top, S.way, S.time);		
 		if (S.now < S.time) setTimeout(S.run, S.step);
 	}
 
 	S.start = function() {
 		var to = this.getAttribute('to');
 		var el = document.getElementById(to);		
-		S.top = document.documentElement.scrollTop;
+		S.top = document.body.scrollTop;
 		S.way = el.offsetTop - S.top;
 		S.now = 0;
 		S.run();
